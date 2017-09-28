@@ -70,7 +70,7 @@ int main()
 
 	glColor3f(1.0f, 0.3f, 0.3f);
 
-    static float point=1;
+    static float point=5;
     static float angle=0;
     
     
@@ -110,10 +110,12 @@ int main()
     // pos[0]
     // pos[1]
     
-    glVertex2f(300.0, 300.0);
+    
     x=cx+hyp*sin(angle);
     y=cy+hyp*cos(angle);
-    angle+=.1;
+   
+    glVertex2f(x, y);
+     angle+=.01;
     
 	glEnd();
     
