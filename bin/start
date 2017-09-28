@@ -1,0 +1,3 @@
+#!/bin/bash
+
+terminator -e 'cd ~/c;if make; then app; read; fi;read'
