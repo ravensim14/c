@@ -15,10 +15,10 @@ dirs += lib
 libs += -L lib
 libs += -I glad/include
 
-libs += -ldl
 libs += -lGL
 libs += -lglfw
 libs += -lglad
+libs += -ldl
 
 all: $(dirs) lib/libglad.a bin/app
 
