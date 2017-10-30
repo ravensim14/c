@@ -30,7 +30,7 @@ static gboolean keypress(GtkWidget *widget, GdkEventKey *event) {
 int main(int argc, char *argv[]) {
 
   gtk_init (&argc, &argv);
-
+k
   window.main = gtk_window_new(GTK_WINDOW_TOPLEVEL);
   gtk_window_set_default_size(GTK_WINDOW(window.main), 500, 500);
   g_signal_connect(window.main, "destroy", G_CALLBACK(gtk_main_quit), NULL);
